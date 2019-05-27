@@ -1,0 +1,40 @@
+body{
+  height:40vh;
+}
+.bg{
+  height:100vh;
+  background-image: url(../../../assets/home_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 100;
+  width:100%;
+  display: flex;
+  align-items: center;
+}
+.home-content{
+  display:flex;
+  position: relative;
+  align-self: center;
+  justify-content: center;
+  background: rgba(225,225,225,0.5);
+  padding:10vh 5vh;
+}
+
+.ideals  {
+h2 {
+  font-size: 3.7rem;
+  text-transform: uppercase;
+  font-weight: lighter;
+  color: #25d5d2;
+}
+}
+.lc {
+  text-transform: lowercase!important;
+}
+.first {
+  h1{
+  font-size:9.3rem;
+  text-transform: uppercase;
+  color: #25d5d2;
+}}

@@ -1,0 +1,35 @@
+<div class="bg">
+  <div class="container">
+    <div class="content-text">
+      <h2>Our Work</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus esse facere odit. Aliquid atque et expedita illum maiores rem sequi suscipit temporibus vitae! Dolorem ipsam molestias nisi, odio omnis suscipit?</p>
+    </div>
+    <hr>
+    <div class="portfolio">
+      <div class="content">
+      <div class="name">PORTFOLIO</div>
+      <div class="categories">
+        <ul>
+          <li>All</li>
+          <li>Forest</li>
+          <li>Sea</li>
+          <li>Mount</li>
+        </ul>
+      </div>
+      </div>
+      <hr style="width:100%">
+      <div class="row images" *ngIf="works">
+        <div class="image" *ngFor="let work of works">
+
+          <img [src]="work.imgUrl" alt="">
+          <div class="modal">
+            <div class="follow">
+              <i class="fa fa-plus" aria-hidden="true"></i>
+            </div>
+          </div>
+          <span>{{work.describe}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

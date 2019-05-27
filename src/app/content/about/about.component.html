@@ -1,0 +1,24 @@
+<div class="bg">
+<div class="container">
+  <div class="content-text">
+    <h2>WHO WE ARE & WHAT WE DO</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus esse facere odit. Aliquid atque et expedita illum maiores rem sequi suscipit temporibus vitae! Dolorem ipsam molestias nisi, odio omnis suscipit?</p>
+
+  </div>
+  <div class="meet"><span>Meet the team</span></div>
+  <div class="row users-field" *ngIf="users">
+  <div class="" *ngFor="let user of users">
+    <div class="text-center user-field">
+      <img [src]="user.imgUrl" class="img-round">
+      <h2>{{user.firstName + ' ' + user.secondName }}</h2>
+      <h6>{{user.position}}</h6>
+      <div class="icons">
+        <div class="icon"><a [href]="user.fbLink"><i class="fab fa-facebook fb"></i></a></div>
+        <div class="icon"><a [href]="user.instLink"><i class="fab fa-instagram insta"></i></a></div>
+        <div class="icon"><a [href]="user.mailLink"><i class="far fa-envelope mail"></i></a></div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>

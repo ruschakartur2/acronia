@@ -1,0 +1,30 @@
+header {
+  position: absolute;
+  width:100%;
+  z-index: 10;
+  -webkit-box-shadow: inset 19px 72px 76px -68px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 19px 72px 76px -68px rgba(0,0,0,0.75);
+  box-shadow: inset 19px 72px 76px -68px rgba(0,0,0,0.75);
+}
+.navs {
+  display:flex;
+  justify-content: space-between;
+}
+li{
+  list-style-type: none;
+}
+
+.nav-item {
+  padding:25px 15px 8px;
+  border-radius: 0 0 5px 5px;
+
+}
+.active {
+  padding:25px 15px 8px;
+  background: deepskyblue;
+  border-radius: 0 0 10px 10px;
+}
+.nav-item a {
+  color: white;
+  text-decoration: none;
+}
